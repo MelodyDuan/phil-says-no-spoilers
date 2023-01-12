@@ -1,5 +1,5 @@
 // this page was always being correctly loaded
-// it's console logs go to the browser, not the extension
+// its console logs go to the browser, not the extension
 
 // this grabs the current URL
 const thisURL = window.location.href;

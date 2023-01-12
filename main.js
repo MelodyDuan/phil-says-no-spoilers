@@ -8,6 +8,7 @@ const idStart = thisURL.indexOf("v=") + 2;
 const vidId = thisURL.slice(url, url + 11);
 
 // this fetches the tags of the video
+// input YouTube API key
 fetch(
   `https://www.googleapis.com/youtube/v3/videos?key=` OUR KEY HERE `&fields=items(snippet(title,description,tags))&part=snippet&id=${vidId}`
 )

@@ -18,16 +18,22 @@
       button {
         font-family: 'Lato', sans-serif;
         font-weight: 900;
-        color: #2A324B;
+        color: whitesmoke;
         margin: 5px;
         padding: 10px;
         border: none;
         border-radius: 5px;
-        background-color: #E1E5EE;
-        box-shadow: 0 0 10px 5px #b1b1b1;
+        box-shadow: 0 0 10px 2px #b1b1b1;
+      }
+      #quickPeekBtn {
+        background-color: #767B91;
+      }
+      #noSpoilersBtn {
+        /* background-color: #767B91; */
+        background-color: #F7C59F;
       }
       button:hover {
-        background-color: #C7CCDB;
+        filter: brightness(130%);
       }
       button:active {
         transform: scale(0.90);
@@ -36,7 +42,8 @@
   </head>
   <body>
     <img src="./phil_says_no_spoilers.png" id = 'phil_img'>
-    <button id="noSpoilersBtn">Just A Quick Peek...</button>
+    <!-- <button id="quickPeekBtn">Just A Quick Peek...</button> -->
+    <button id="noSpoilersBtn">I Said No Spoilers!</button>
     <script src="./popup.js"></script>
   </body>
 </html>

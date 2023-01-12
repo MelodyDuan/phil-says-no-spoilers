@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Phil's face will pop on screen when user tries to watch youtube javascript tutorials",
   "manifest_version": 3,
-
+  "background": {
+    "scripts":["background.js"]
+  },
   "content_scripts": [
     {
       "js": ["main.js"],

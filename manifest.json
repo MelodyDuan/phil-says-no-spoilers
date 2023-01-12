@@ -4,7 +4,7 @@
   "description": "Phil's face will pop on screen when user tries to watch youtube javascript tutorials",
   "manifest_version": 3,
   "background": {
-    "scripts":["background.js"]
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {

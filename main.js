@@ -9,7 +9,7 @@ const vidId = thisURL.slice(url, url + 11);
 
 // this fetches the tags of the video
 fetch(
-  `https://www.googleapis.com/youtube/v3/videos?key=AIzaSyAjGD1wzEHf239oDznUzB0lHUzD2hlCHjI&fields=items(snippet(title,description,tags))&part=snippet&id=${vidId}`
+  `https://www.googleapis.com/youtube/v3/videos?key=` OUR KEY HERE `&fields=items(snippet(title,description,tags))&part=snippet&id=${vidId}`
 )
   .then((response) => response.json())
   .then((parsed) => {

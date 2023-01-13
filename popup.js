@@ -1,7 +1,7 @@
 function toggleSwitch(event) {
   console.log(event.target.id);
   if (event.target.innerText === 'I Said No Spoilers!') {
-    event.target.innerText = 'Just A Quick Peek...';
+    event.target.innerText = 'Just A Quick Peek.';
     event.target.style.backgroundColor = '#767B91'
     event.target.style.color = 'white';
     chrome.action.setBadgeText({ text: '' });
@@ -16,5 +16,5 @@ function toggleSwitch(event) {
 }
 
 // when the button is clicked, enable or disable the extension based on previous value
-document.getElementById('noSpoilersBtn').addEventListener('click', toggleSwitch);
+document.getElementById('quickPeekBtn').addEventListener('click', toggleSwitch);
 // document.getElementById('quickPeekBtn').addEventListener('click', toggleSwitch);
